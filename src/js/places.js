@@ -13,7 +13,7 @@ const placesComponent = (item) => {
             </article>
             </fieldset>
             <article class="from_date">
-                ${item.from} ${item.to}  
+                ${item.date}---${item.date}
             </article>
             </fieldset>
             <button class="entry__delete" id="delete--${item.id}">Delete</button>
