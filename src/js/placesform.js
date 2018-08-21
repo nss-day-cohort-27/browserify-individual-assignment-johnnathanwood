@@ -12,6 +12,7 @@ const formManager = Object.create(null, {
         renderCountryForm: {
             value: () => {
                 return `
+                    <h2>Places Ive Visited</h2>
                     <fieldset class="placesField">
                     <label for="country">Country</label>
                     <input required type="text" id="country" placeholder="Enter Country">
@@ -25,6 +26,22 @@ const formManager = Object.create(null, {
                             <textarea id="description placeholder="Enter visit description" rows="10">
                             </textarea>
                             </fieldset>
+                                <fieldset>
+                                <legend>Visit dates</legend>
+                                <div><label for="start">From</label>
+                                <input type="date" id="from" name="visit" 
+                                    value="2018-07-22"
+                                    min="2018-01-01"
+                                    max="2018-12-31" />
+                                </div>
+                                        <div>
+                                        <label for="to">To</label>
+                                        <input type="date" id="to" name="visit"
+                                        value="2018-07-29"
+                                        min="2018-01-01" max="2018-12-31"/ >
+                                        </div>
+                                </fieldset>
+                                    
                             <button id="saveLocationButton">Save Location</button>
                             `
             }
