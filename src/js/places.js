@@ -21,4 +21,6 @@ const placesComponent = (item) => {
     `
 }
 
+///////////////////////////////item.date is only reading the "to" index///////////////////////////////////////
+
 module.exports = placesComponent
