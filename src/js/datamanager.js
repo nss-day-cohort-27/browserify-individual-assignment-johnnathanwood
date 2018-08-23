@@ -23,6 +23,19 @@ const APIManager = Object.create(null, {
             })
                 .then(r => r.json())
         }
+    },
+    editEntry: {
+        value: (id, object) => {
+            return fetch(`http://localhost:8088/visits/${id}`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(object)
+            })
+                .then(response => response.json())
+
+        }
     }
 })
 

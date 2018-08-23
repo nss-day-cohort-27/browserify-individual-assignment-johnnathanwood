@@ -2,21 +2,22 @@
 ////////////////////// this will build the post on the page once submitted///////////////////////////////////////
 
 const placesComponent = (item) => {
-    return `<fieldset>
-        <div class="entry">
-            <header class="entry__header">
-                <h2>${item.country}</h2>
-            </header>
+    return `
+        <div  id="entryCard--${item.id}" class="entry">
             <fieldset>
-            <article class="entry__content">
-                ${item.description}
-            </article>
+            <header class="entry__header">
+                <h2 id="title--${item.id}">${item.country}</h2>
+            </header>
+            
+            <p id="content--${item.id}" class="entry__content">${item.description}</p>
+        
+            <h3 id="date--${item.id}" class="from_date">${item.dateFrom}---${item.dateTo}</h3>
             </fieldset>
-            <article class="from_date">
-                ${item.date}---${item.date}
-            </article>
-            </fieldset>
-            <button class="entry__delete" id="delete--${item.id}">Delete</button>
+            
+            <footer>
+                <button class="entry__edit" id="edit--${item.id}">Edit</button>
+                <button class="entry__delete" id="delete--${item.id}">Delete</button>
+            </footer>
         </div>
     `
 }

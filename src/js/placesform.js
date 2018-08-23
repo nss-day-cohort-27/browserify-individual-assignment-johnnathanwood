@@ -23,8 +23,7 @@ const formManager = Object.create(null, {
                         </fieldset>
                             <fieldset class="descriptionField">
                             <label for="description">Description</label>
-                            <textarea id="description" placeholder="Enter visit description">
-                            </textarea>
+                            <textarea id="description" placeholder="Enter visit description"></textarea>
                             </fieldset>
                                 <fieldset>
                                 <legend>Visit dates</legend>
@@ -39,7 +38,7 @@ const formManager = Object.create(null, {
                                         min="1990-01-01" max="2018-12-31"/ >
                                         </div>
                                 </fieldset>
-                                    <button onclick="alert('Visit has been added!')" id="saveLocationButton">Save Location</button>
+                                    <button id="saveLocationButton">Save Location</button>
                                         <article><h2>Places I have been to</h2></article>
                                  `
             }
