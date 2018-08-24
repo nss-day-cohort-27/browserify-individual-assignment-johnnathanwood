@@ -8,10 +8,11 @@ const formManager = Object.create(null, {
         }
     },
 
-////////// this is what will be rendered using .innerHTML////////////////////////////////////////////
+//////// this is what will be rendered using .innerHTML////////////////////////////////////////////
         renderCountryForm: {
             value: () => {
                 return `
+                    
                     <h2>New Country</h2>
                     <fieldset class="placesField">
                     <label for="country">Country</label>

@@ -4,7 +4,7 @@
 const placesComponent = (item) => {
     return `
         <div  id="entryCard--${item.id}" class="entry">
-            <fieldset>
+            <fieldset class="countryCard">
             <header class="entry__header">
                 <h2 id="title--${item.id}">${item.country}</h2>
             </header>
@@ -15,8 +15,12 @@ const placesComponent = (item) => {
             </fieldset>
             
             <footer>
+            
                 <button class="entry__edit" id="edit--${item.id}">Edit</button>
+            
+            
                 <button class="entry__delete" id="delete--${item.id}">Delete</button>
+            
             </footer>
         </div>
     `

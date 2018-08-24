@@ -59,19 +59,24 @@ document.querySelector("#saveLocationButton").addEventListener("click", () => {
             parent.innerHTML = `
             
             <fieldset>
+            <div class="countryButton">
             <header class="entry__header">
                 <input id="editedCountry" value="${country}">
             </header>
-            
-            <textarea id="editedPageContent">${description}</textarea>
-            <input id="editedfromDate" value="${fromDate}">
-            <input id="editedtoDate" value="${toDate}">
-           
+            </div>
+            <div class="descriptionCard">
+                <textarea id="editedPageContent">${description}</textarea>
+            </div>
+            <div class="dateCard">
+                <input id="editedfromDate" value="${fromDate}">
+                <input id="editedtoDate" value="${toDate}">
+            </div>
             </fieldset>
-            
             <footer>
+            <div class="entryButtons">
                 <button class="entry__save" id="save--${entryID}">Save</button>
                 <button class="entry__delete" id="delete--${entryID}">Delete</button>
+            </div>
             </footer>  
             `  
         }
@@ -83,6 +88,7 @@ document.querySelector("#saveLocationButton").addEventListener("click", () => {
                     // image: "",
                     dateFrom: document.querySelector("#editedfromDate").value,
                     dateTo: document.querySelector("#editedtoDate").value
+                    
             }
             APIManager.editEntry(entryID, newVisit).then(listVisits)    
         }
