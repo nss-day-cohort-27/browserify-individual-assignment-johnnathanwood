@@ -74,7 +74,15 @@ p {
 	color: black
 }
 
-.formCard {
+#formCard {
 	background-color: white
 }
 
+.placesField {
+	
+	background: linear-gradient(to right, #0b486b, #f56217);
+}
+
+.countryForm {
+	background-color: red
+}
