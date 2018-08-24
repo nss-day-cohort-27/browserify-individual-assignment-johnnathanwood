@@ -15,6 +15,7 @@ const formManager = Object.create(null, {
                     
                     <h2>New Country</h2>
                     <fieldset class="placesField">
+                    <div id="formCard">
                     <label for="country">Country</label>
                     <input required type="text" id="country" placeholder="Enter Country">
                     </fieldset>

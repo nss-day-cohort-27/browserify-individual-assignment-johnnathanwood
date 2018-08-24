@@ -1,11 +1,3 @@
 {
-  "visits": [
-    {
-      "country": "Germanyv2",
-      "description": "adfj;asdflkasdf;aslkdfjas;dfkljasdfl;kjsaldkfjasdl;kfjasd;lfkjasdfl;kasjdf;alsdkfjas;ldkfjasd;flkjasdf;lkasdjf;alskdfjas;ldkfjas;dflkjasfkl;asjf;laksdjf;asdklfjas;ldkfjas;lkdfjasd;lfkjasd;lfkjasd;lkjasdf;lkasjdf;laksdfj;slakdfj",
-      "dateFrom": "2018-07-22",
-      "dateTo": "2018-07-29",
-      "id": 1
-    }
-  ]
+  "visits": []
 }
